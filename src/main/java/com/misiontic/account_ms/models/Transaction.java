@@ -7,15 +7,15 @@ public class Transaction {
     @Id
     private String id;
     private String usernameOrigin;
-    private String usernameDEstiny;
+    private String usernameDestiny;
     private int value;
     private Date date;
 
 
-    public Transaction(String id, String usernameOrigin, String usernameDEstiny, int value, Date date) {
+    public Transaction(String id, String usernameOrigin, String usernameDestiny, int value, Date date) {
         this.id = id;
         this.usernameOrigin = usernameOrigin;
-        this.usernameDEstiny = usernameDEstiny;
+        this.usernameDestiny = usernameDestiny;
         this.value = value;
         this.date = date;
     }
@@ -36,12 +36,12 @@ public class Transaction {
         this.usernameOrigin = usernameOrigin;
     }
 
-    public String getUsernameDEstiny() {
-        return usernameDEstiny;
+    public String getUsernameDestiny() {
+        return usernameDestiny;
     }
 
-    public void setUsernameDEstiny(String usernameDEstiny) {
-        this.usernameDEstiny = usernameDEstiny;
+    public void setUsernameDestiny(String usernameDEstiny) {
+        this.usernameDestiny = usernameDEstiny;
     }
 
     public int getValue() {
