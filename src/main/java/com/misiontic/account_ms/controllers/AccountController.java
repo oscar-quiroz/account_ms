@@ -3,11 +3,9 @@ package com.misiontic.account_ms.controllers;
 import com.misiontic.account_ms.exceptions.AccountNotFoundException;
 import com.misiontic.account_ms.models.Account;
 import com.misiontic.account_ms.repositories.AccountRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class AccountController {
 
     private final AccountRepository accountRepository;
